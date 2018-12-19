@@ -1,0 +1,168 @@
+/* app css stylesheet */
+
+*{
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body, html {
+  margin: 0;
+  background-color: #210b08 !important;
+  color: #fff !important;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.name {
+  text-align: center;
+  width: 62%;
+  font-size: 24px;
+  margin-top: 14px;
+}
+
+li a {
+  background-color: black !important;
+  
+}
+
+.backButton {
+  font-size: 34px;
+  margin-top: 14px;
+  color: white;
+}
+
+.container-fluid {
+  margin-top: 11px;
+}
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-top: 13%;
+  text-align: center
+}
+
+.img {
+  margin-left: 10%;
+  position: relative;
+  float: left;
+  width:  200px;
+  height: 300px;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+}
+
+.search {
+  margin-top: 16px;
+  width: 10%;
+  float: right;
+}
+
+.search img {
+  height: 43px;
+}
+
+h6 {
+  margin-top: 24px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.input {
+   float: right;
+   margin-top: 34px;
+   margin-right: 10px;
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  z-index: 100;
+  position: fixed !important;
+  top: 0;
+  background-image: url("../img/Slices/nav_bar.png")
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+input[type=text] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffff;
+  padding: 2px 5px;
+
+}
+
+input:focus {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffff;
+}
+
+
+
+.section {
+  margin-top: 11%;
+  margin-left: 9%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fix {
+  margin-top: 14px;
+  width: 33.33%;
+  height: 333px;
+  box-sizing: border-box;
+  margin-bottom: 36px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.fix img {
+  width: 200px;
+  height: 300px;
+}
+
+.myDiv {
+  height: 25px;
+  background-color: #210b08;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+  }
+}

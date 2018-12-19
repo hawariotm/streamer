@@ -1,0 +1,28 @@
+<nav class="navbar navbar-default navBar" >
+        <div class="container-fluid">
+            <div class="active search"><a href="#">
+                <img src='img/Slices/search.png'>
+              </a></div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">
+              <img src='img/Slices/Back.png'>
+            </a></li>
+            <li class="backButton">Romantic Comedy</li>
+            <div class="input"><input type="text" ng-model="nameFilter" placeholder="Search..."/></div>
+    
+          </ul>
+        </div>
+      </nav>
+    <div ng-repeat="driver in driversList | filter: searchFilter">
+      <div class="img" style="background-image:url('img/Slices/{{driversList[$index].posterImage}}')">
+      </div>
+      <div class="img" style="background-image:url('img/Slices/{{driversList[$index + 1].posterImage}}')">
+      </div>
+      <div class="img" style="background-image:url('img/Slices/{{driversList[$index + 2 ].posterImage}}')">
+      </div>
+      <div class = 'text'> {{driversList[$index].name}} </div>
+      <div class = 'text'> {{driversList[$index + 1].name}} </div>
+      <div class = 'text'> {{driversList[$index+ 2].name}}  </div>
+    </div>
+    <div class="myDiv" in-view="lineInView($index, $inview, $inviewInfo)" in-view-options="{ viewportOffset: offset }"> sss</div>
+    
