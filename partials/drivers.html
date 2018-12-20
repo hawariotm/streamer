@@ -16,7 +16,7 @@
       </nav>
   <div class="section">
     <div class ='fix' ng-repeat="driver in driversList | filter: searchFilter">
-         <img src="img/Slices/{{driver.posterImage}}" onError="this.onerror=null;this.src='img/Slices/placeholder_for_missing_posters.png';">
+         <img ng-src="img/Slices/{{driver.posterImage}}" src='img/Slices/placeholder_for_missing_posters.png'>
          <div class = 'name'> {{driver.name}} </div>
 
     </div>
