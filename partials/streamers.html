@@ -1,0 +1,18 @@
+<div class='header'>
+  <div class='backButton'>
+    <img class='backImg' src='img/Slices/Back.png'>
+  </div>
+  <div class="title">
+    <h4> Romantic Comedy </h4>
+  </div>
+  <div class="input"><input type="text" id="input" ng-model="nameFilter" placeholder="Search..." ng-show="iconClicked">
+    <img class='searchImg' ng-class="{addMargin: iconClicked != true  }" src='img/Slices/search.png' ng-click='toggleView()'>
+  </div>
+</div>
+<div class="section" ng-if='contents.length > 0'>
+  <div class='fix' ng-repeat="content in contents | filter: searchFilter">
+    <img ng-src="img/Slices/{{content.posterImage}}">
+    <div class='name'> {{content.name}} </div>
+  </div>
+</div>
+<div class="myDiv"  in-view="lineInView($index, $inview, $inviewInfo)" in-view-options="{ viewportOffset: offset }"></div>

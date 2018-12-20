@@ -11,13 +11,37 @@ body, html {
 }
 
 .header {
-  text-align: center;
-  padding: 32px;
+  display: flex;
+  flex-direction: row;
+  z-index: 100;
+  flex-wrap: wrap;
+  height: 50px;
+  background-image: url("../img/Slices/nav_bar.png");
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.backImg {
+  height: 24px;
+  margin-top: 13px;
+  margin-left: 28%;
+}
+
+.title {
+  width: 45%;
+}
+
+.title h4 {
+  margin-top: 16px;
+  margin-left: 2%;
 }
 
 .name {
-  text-align: center;
-  margin-top: 14px;
+  text-align: left;
+  margin-top: 3px;
+  font-size: 11px;
+  color: #a7a7a7;
 }
 
 li a {
@@ -26,15 +50,18 @@ li a {
 }
 
 .backButton {
-  font-size: 34px;
-  margin-top: 14px;
+  width: 12%;
+  font-size: 20px;
   color: white;
 }
 
 .container-fluid {
-  margin-top: 11px;
+  margin : 0 !important;
+  padding: 0 !important;
 }
-
+.addMargin {
+  margin-left: 76%;
+}
 
 .row {
   display: -ms-flexbox; /* IE10 */
@@ -79,13 +106,17 @@ h6 {
 }
 
 .input {
-   float: right;
-   margin-top: 34px;
-   margin-right: 10px;
+  margin-left: 1%;
+  margin-top: 14px;
+  width: 40%;
+}
+
+.searchImg {
+  height: 23px;
 }
 
 nav {
-  height: 100px;
+  height: 53px;
   width: 100%;
   z-index: 100;
   position: fixed !important;
@@ -101,12 +132,16 @@ nav {
   padding: 0 4px;
 }
 
+.text {
+  width:80%;
+}
+
 input[type=text] {
   background: transparent;
   border: none;
   border-bottom: 1px solid #ffff;
   padding: 2px 5px;
-
+  width:80%;
 }
 
 input:focus {
@@ -124,10 +159,11 @@ input:focus {
   justify-content: flex-end;
   margin: 10px;
   margin-right: 0px;
+  margin-top: 50px;
 }
 
 .fix {
-  margin-top: 55px;
+  margin-top: 10px;
   width: 33.333%;
 }
 
@@ -161,4 +197,30 @@ input:focus {
       flex: 100%;
       max-width: 100%;
   }
+}
+
+@media screen and (max-width: 324px) {
+  .title h4 {
+    margin-top: 19px;
+    margin-left: 2%;
+    font-size: 14px;
+  }
+
+  .backImg {
+    height: 20px;
+    margin-top: 16px;
+    margin-left: 28%;
+  }
+
+  .input {
+    font-size: 10px;
+    margin-left: 0%;
+    margin-top: 14px;
+    width: 39%;
+  }
+
+  .searchImg {
+    height: 13px;
+  }
+
 }
