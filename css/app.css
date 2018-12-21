@@ -55,54 +55,8 @@ li a {
   color: white;
 }
 
-.container-fluid {
-  margin : 0 !important;
-  padding: 0 !important;
-}
 .addMargin {
   margin-left: 76%;
-}
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-  margin-top: 13%;
-  text-align: center
-}
-
-.img {
-  margin-left: 10%;
-  position: relative;
-  float: left;
-  width:  200px;
-  height: 300px;
-  background-position: 50% 50%;
-  background-repeat:   no-repeat;
-  background-size:     cover;
-}
-
-.search {
-  margin-top: 16px;
-  width: 10%;
-  float: right;
-}
-
-.search img {
-  height: 43px;
-}
-
-h6 {
-  margin-top: 24px;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
 }
 
 .input {
@@ -117,23 +71,6 @@ h6 {
 
 .searchImg:hover {
   cursor: pointer;
-}
-
-nav {
-  height: 53px;
-  width: 100%;
-  z-index: 100;
-  position: fixed !important;
-  top: 0;
-  background-image: url("../img/Slices/nav_bar.png")
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
 }
 
 .text {
@@ -154,8 +91,6 @@ input:focus {
   border-bottom: 1px solid #ffff;
 }
 
-
-
 .section {
   display: flex;
   flex-direction: row;
@@ -169,11 +104,6 @@ input:focus {
 .fix {
   margin-top: 10px;
   width: 33.333%;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
 }
 
 .fix img {

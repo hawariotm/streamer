@@ -12,7 +12,6 @@ angular.module('Streamer.controllers', []).
       return !$scope.nameFilter || re.test(content.name);
     };
 
-
     $scope.toggleView = function () {
       var name = document.getElementById("input");
       $scope.iconClicked = !$scope.iconClicked;
@@ -28,21 +27,19 @@ angular.module('Streamer.controllers', []).
           if (response) {
             $scope.contents = $scope.contents.concat(response.data.page.contentItems.content);
             $scope.currentPage = response.data.page.pageNumRequested;
-            $scope.url = 'js/CONTENTLISTINGPAGE-PAGE' + ($scope.currentPage + 1) + '.json'
+            $scope.url = '../data/CONTENTLISTINGPAGE-PAGE' + ($scope.currentPage + 1) + '.json'
           }
         });
       }
     }
 
-
-
     $scope.loadImages = function () {
-      var url = 'js/CONTENTLISTINGPAGE-PAGE1.json';
+      var url = '../data/CONTENTLISTINGPAGE-PAGE1.json';
       APIservice.getDrivers(url).then(function (response) {
         $scope.contents = $scope.contents.concat(response.data.page.contentItems.content);
         $scope.totalItems = response.data.page.totalContentItems;
         $scope.currentPage = response.data.page.pageNumRequested;
-        $scope.url = 'js/CONTENTLISTINGPAGE-PAGE' + ($scope.currentPage + 1) + '.json'
+        $scope.url = '../data/CONTENTLISTINGPAGE-PAGE' + ($scope.currentPage + 1) + '.json'
       });
     };
 
