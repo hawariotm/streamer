@@ -11,15 +11,37 @@ body, html {
 }
 
 .header {
-  text-align: center;
-  padding: 32px;
+  display: flex;
+  flex-direction: row;
+  z-index: 100;
+  flex-wrap: wrap;
+  height: 50px;
+  background-image: url("../img/Slices/nav_bar.png");
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.backImg {
+  height: 24px;
+  margin-top: 13px;
+  margin-left: 28%;
+}
+
+.title {
+  width: 45%;
+}
+
+.title h4 {
+  margin-top: 16px;
+  margin-left: 2%;
 }
 
 .name {
-  text-align: center;
-  width: 62%;
-  font-size: 24px;
-  margin-top: 14px;
+  text-align: left;
+  margin-top: 3px;
+  font-size: 11px;
+  color: #a7a7a7;
 }
 
 li a {
@@ -28,79 +50,31 @@ li a {
 }
 
 .backButton {
-  font-size: 34px;
-  margin-top: 14px;
+  width: 12%;
+  font-size: 20px;
   color: white;
 }
 
-.container-fluid {
-  margin-top: 11px;
-}
-
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-  margin-top: 13%;
-  text-align: center
-}
-
-.img {
-  margin-left: 10%;
-  position: relative;
-  float: left;
-  width:  200px;
-  height: 300px;
-  background-position: 50% 50%;
-  background-repeat:   no-repeat;
-  background-size:     cover;
-}
-
-.search {
-  margin-top: 16px;
-  width: 10%;
-  float: right;
-}
-
-.search img {
-  height: 43px;
-}
-
-h6 {
-  margin-top: 24px;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.addMargin {
+  margin-left: 76%;
 }
 
 .input {
-   float: right;
-   margin-top: 34px;
-   margin-right: 10px;
+  margin-left: 1%;
+  margin-top: 14px;
+  width: 40%;
 }
 
-nav {
-  height: 100px;
-  width: 100%;
-  z-index: 100;
-  position: fixed !important;
-  top: 0;
-  background-image: url("../img/Slices/nav_bar.png")
+.searchImg {
+  height: 23px;
 }
 
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+.searchImg:hover {
+  cursor: pointer;
+}
+
+.text {
+  width:80%;
 }
 
 input[type=text] {
@@ -108,7 +82,7 @@ input[type=text] {
   border: none;
   border-bottom: 1px solid #ffff;
   padding: 2px 5px;
-
+  width:80%;
 }
 
 input:focus {
@@ -117,32 +91,24 @@ input:focus {
   border-bottom: 1px solid #ffff;
 }
 
-
-
 .section {
-  margin-top: 11%;
-  margin-left: 9%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
-.fix {
-  margin-top: 14px;
-  width: 33.33%;
-  height: 333px;
-  box-sizing: border-box;
-  margin-bottom: 36px;
+  justify-content: flex-start;
+  margin: 10px;
+  margin-right: 0px;
+  margin-top: 50px;
 }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
+.fix {
+  margin-top: 10px;
+  width: 33.333%;
 }
 
 .fix img {
-  width: 200px;
-  height: 300px;
+  width: 100%;
+  padding-right: 10px;
 }
 
 .myDiv {
@@ -165,4 +131,30 @@ input:focus {
       flex: 100%;
       max-width: 100%;
   }
+}
+
+@media screen and (max-width: 324px) {
+  .title h4 {
+    margin-top: 19px;
+    margin-left: 2%;
+    font-size: 14px;
+  }
+
+  .backImg {
+    height: 20px;
+    margin-top: 16px;
+    margin-left: 28%;
+  }
+
+  .input {
+    font-size: 10px;
+    margin-left: 0%;
+    margin-top: 14px;
+    width: 39%;
+  }
+
+  .searchImg {
+    height: 13px;
+  }
+
 }
