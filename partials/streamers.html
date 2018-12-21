@@ -11,8 +11,8 @@
 </div>
 <div class="section" ng-if='contents.length > 0'>
   <div class='fix' ng-repeat="content in contents | filter: searchFilter">
-    <img ng-src="img/Slices/{{content.posterImage}}">
-    <div class='name'> {{content.name}} </div>
+    <img ng-src="img/Slices/{{content.posterImage}}" onError="this.onerror=null;this.src='img/Slices/placeholder_for_missing_posters.png';">
+      <div class='name'> {{content.name}} </div>
   </div>
 </div>
 <div class="myDiv"  in-view="lineInView($index, $inview, $inviewInfo)" in-view-options="{ viewportOffset: offset }"></div>

@@ -5,7 +5,6 @@ angular.module('Streamer.controllers', []).
     $scope.nameFilter = null;
     $scope.contents = [];
     $scope.next_page = null;
-    $scope.offset = ['-50%', 0, 0];
     $scope.iconClicked = false;
 
     $scope.searchFilter = function (content) {
